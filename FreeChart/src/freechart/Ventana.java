@@ -18,13 +18,21 @@ public class Ventana extends javax.swing.JFrame implements Cloneable{
     private void initComponents() {
 
         jBoton = new javax.swing.JButton();
+        jBoton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jBoton.setText("jBoton");
+        jBoton.setText("Graficos");
         jBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBotonActionPerformed(evt);
+            }
+        });
+
+        jBoton2.setText("Graficos editables");
+        jBoton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBoton2ActionPerformed(evt);
             }
         });
 
@@ -33,16 +41,20 @@ public class Ventana extends javax.swing.JFrame implements Cloneable{
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(jBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(167, Short.MAX_VALUE))
+                .addGap(74, 74, 74)
+                .addComponent(jBoton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addComponent(jBoton2)
+                .addGap(51, 51, 51))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(135, 135, 135)
-                .addComponent(jBoton)
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addGap(134, 134, 134)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBoton2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         pack();
@@ -87,6 +99,10 @@ public class Ventana extends javax.swing.JFrame implements Cloneable{
         /*Establecemos la acción que hará la ventana cuando se presione el botón de cerrar la ventana*/
     }//GEN-LAST:event_jBotonActionPerformed
 
+    private void jBoton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoton2ActionPerformed
+        
+    }//GEN-LAST:event_jBoton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -124,5 +140,6 @@ public class Ventana extends javax.swing.JFrame implements Cloneable{
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBoton;
+    private javax.swing.JButton jBoton2;
     // End of variables declaration//GEN-END:variables
 }
