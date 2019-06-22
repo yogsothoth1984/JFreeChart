@@ -100,7 +100,8 @@ public class Ventana extends javax.swing.JFrame implements Cloneable{
     }//GEN-LAST:event_jBotonActionPerformed
 
     private void jBoton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoton2ActionPerformed
-        
+        VentanaGraficosEditables vGE=new VentanaGraficosEditables();
+        vGE.setVisible(true);
     }//GEN-LAST:event_jBoton2ActionPerformed
 
     /**
